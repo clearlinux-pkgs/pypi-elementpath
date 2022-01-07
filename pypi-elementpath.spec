@@ -17,11 +17,11 @@ BuildRequires : buildreq-distutils3
 Provides: elementpath
 Provides: elementpath-python
 Provides: elementpath-python3
-BuildRequires : pluggy
+BuildRequires : pypi(pluggy)
 BuildRequires : py-python
 BuildRequires : pytest
 BuildRequires : tox
-BuildRequires : virtualenv
+BuildRequires : pypi(virtualenv)
 
 %description
 ***********
