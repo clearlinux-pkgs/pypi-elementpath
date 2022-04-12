@@ -4,7 +4,7 @@
 #
 Name     : pypi-elementpath
 Version  : 2.5.0
-Release  : 11
+Release  : 12
 URL      : https://files.pythonhosted.org/packages/15/35/cf78eea6dd624aa03687589b4c7dde3e5aae0f67f418f3db36fa6f1a32ff/elementpath-2.5.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/15/35/cf78eea6dd624aa03687589b4c7dde3e5aae0f67f418f3db36fa6f1a32ff/elementpath-2.5.0.tar.gz
 Summary  : XPath 1.0/2.0 parsers and selectors for ElementTree and lxml
@@ -76,7 +76,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1646510419
+export SOURCE_DATE_EPOCH=1649741413
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
