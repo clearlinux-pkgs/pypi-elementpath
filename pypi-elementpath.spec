@@ -4,10 +4,10 @@
 # Using build pattern: distutils3
 #
 Name     : pypi-elementpath
-Version  : 4.1.1
-Release  : 32
-URL      : https://files.pythonhosted.org/packages/3c/ab/fd32a0ca98b56feb18a1ac9b783faf73fc18d7c759c98843bf6b17c87fde/elementpath-4.1.1.tar.gz
-Source0  : https://files.pythonhosted.org/packages/3c/ab/fd32a0ca98b56feb18a1ac9b783faf73fc18d7c759c98843bf6b17c87fde/elementpath-4.1.1.tar.gz
+Version  : 4.1.2
+Release  : 33
+URL      : https://files.pythonhosted.org/packages/6d/ce/5d72a8ab69f44485b63cc396524aec8b9486755be8979befe11685d1397e/elementpath-4.1.2.tar.gz
+Source0  : https://files.pythonhosted.org/packages/6d/ce/5d72a8ab69f44485b63cc396524aec8b9486755be8979befe11685d1397e/elementpath-4.1.2.tar.gz
 Summary  : XPath 1.0/2.0/3.0/3.1 parsers and selectors for ElementTree and lxml
 Group    : Development/Tools
 License  : MIT
@@ -68,10 +68,10 @@ python3 components for the pypi-elementpath package.
 
 
 %prep
-%setup -q -n elementpath-4.1.1
-cd %{_builddir}/elementpath-4.1.1
+%setup -q -n elementpath-4.1.2
+cd %{_builddir}/elementpath-4.1.2
 pushd ..
-cp -a elementpath-4.1.1 buildavx2
+cp -a elementpath-4.1.2 buildavx2
 popd
 
 %build
@@ -79,15 +79,15 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1681224071
+export SOURCE_DATE_EPOCH=1684608253
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
 export NM=gcc-nm
-export CFLAGS="$CFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz "
-export FCFLAGS="$FFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz "
-export FFLAGS="$FFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz "
-export CXXFLAGS="$CXXFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz "
+export CFLAGS="$CFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
+export FCFLAGS="$FFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
+export FFLAGS="$FFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
+export CXXFLAGS="$CXXFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
 export MAKEFLAGS=%{?_smp_mflags}
 python3 setup.py build
 

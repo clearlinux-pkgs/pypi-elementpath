@@ -1,5 +1,5 @@
 PKG_NAME := pypi-elementpath
-URL = https://files.pythonhosted.org/packages/3c/ab/fd32a0ca98b56feb18a1ac9b783faf73fc18d7c759c98843bf6b17c87fde/elementpath-4.1.1.tar.gz
+URL = https://files.pythonhosted.org/packages/6d/ce/5d72a8ab69f44485b63cc396524aec8b9486755be8979befe11685d1397e/elementpath-4.1.2.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
