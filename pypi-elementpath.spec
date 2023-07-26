@@ -4,10 +4,10 @@
 # Using build pattern: distutils3
 #
 Name     : pypi-elementpath
-Version  : 4.1.4
-Release  : 35
-URL      : https://files.pythonhosted.org/packages/01/f5/30643fa6a71a9b3565248ca0a303d1d9ae4a323683616c1c457186429a87/elementpath-4.1.4.tar.gz
-Source0  : https://files.pythonhosted.org/packages/01/f5/30643fa6a71a9b3565248ca0a303d1d9ae4a323683616c1c457186429a87/elementpath-4.1.4.tar.gz
+Version  : 4.1.5
+Release  : 36
+URL      : https://files.pythonhosted.org/packages/02/c4/198233fa9052d755766eadaf11c91337e49c0ea99ccc370ead94afab9d14/elementpath-4.1.5.tar.gz
+Source0  : https://files.pythonhosted.org/packages/02/c4/198233fa9052d755766eadaf11c91337e49c0ea99ccc370ead94afab9d14/elementpath-4.1.5.tar.gz
 Summary  : XPath 1.0/2.0/3.0/3.1 parsers and selectors for ElementTree and lxml
 Group    : Development/Tools
 License  : MIT
@@ -68,10 +68,10 @@ python3 components for the pypi-elementpath package.
 
 
 %prep
-%setup -q -n elementpath-4.1.4
-cd %{_builddir}/elementpath-4.1.4
+%setup -q -n elementpath-4.1.5
+cd %{_builddir}/elementpath-4.1.5
 pushd ..
-cp -a elementpath-4.1.4 buildavx2
+cp -a elementpath-4.1.5 buildavx2
 popd
 
 %build
@@ -79,7 +79,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1687883728
+export SOURCE_DATE_EPOCH=1690386809
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
