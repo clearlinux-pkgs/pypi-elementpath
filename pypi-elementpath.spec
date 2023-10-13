@@ -5,7 +5,7 @@
 #
 Name     : pypi-elementpath
 Version  : 4.1.5
-Release  : 36
+Release  : 37
 URL      : https://files.pythonhosted.org/packages/02/c4/198233fa9052d755766eadaf11c91337e49c0ea99ccc370ead94afab9d14/elementpath-4.1.5.tar.gz
 Source0  : https://files.pythonhosted.org/packages/02/c4/198233fa9052d755766eadaf11c91337e49c0ea99ccc370ead94afab9d14/elementpath-4.1.5.tar.gz
 Summary  : XPath 1.0/2.0/3.0/3.1 parsers and selectors for ElementTree and lxml
